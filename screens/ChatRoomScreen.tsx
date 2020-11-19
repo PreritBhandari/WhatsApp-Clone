@@ -3,6 +3,7 @@ import { View, Text, ImageBackground, FlatList } from "react-native";
 import { useRoute } from "@react-navigation/native";
 import chatRoomData from "../data/Chats";
 import ChatMessage from "../components/ChatMessages";
+import InputBox from "../components/InputBox";
 
 export default function ChatRoomScreen() {
   const route = useRoute();
@@ -20,6 +21,8 @@ export default function ChatRoomScreen() {
           renderItem={({ item }) => <ChatMessage message={item} />}
           inverted
         />
+
+        <InputBox />
       </ImageBackground>
     </View>
   );
