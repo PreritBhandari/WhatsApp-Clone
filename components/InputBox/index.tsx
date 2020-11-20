@@ -18,6 +18,8 @@ export default function InputBox() {
   };
   const onSendPress = () => {
     console.warn(`Sending:${message}`);
+
+    setMessage("");
   };
 
   const onPress = () => {
